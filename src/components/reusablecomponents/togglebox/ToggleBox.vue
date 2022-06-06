@@ -1,11 +1,17 @@
 <template>
-  <div class="toggle-box"></div>
+  <div :class="classname"></div>
 </template>
 
 <script>
 import { defineComponent } from "@vue/runtime-core";
 
-export default defineComponent({});
+export default defineComponent({
+  name: "ToogleBox",
+  props: ["classname"],
+  data() {
+    return {};
+  },
+});
 </script>
 
 <style scoped lang="scss">

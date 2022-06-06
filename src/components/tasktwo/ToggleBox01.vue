@@ -4,7 +4,7 @@
       <MainButton @onClick="handleVisibility" name="Toggle" />
     </template>
     <template v-slot:box>
-      <ToggleBox v-if="visibleBox" />
+      <ToggleBox :classname="boxClass" />
     </template>
   </BoxContainer>
 </template>
@@ -24,13 +24,17 @@ export default defineComponent({
   name: "ToggleBox01",
   data() {
     return {
-      visibleBox: true,
+      boxClass: "box",
     };
   },
 
   methods: {
     handleVisibility() {
-      this.visibleBox = !this.visibleBox;
+      if (this.boxClass === "box") {
+        return (this.boxClass = "hidden");
+      } else {
+        return (this.boxClass = "box");
+      }
     },
   },
 });
