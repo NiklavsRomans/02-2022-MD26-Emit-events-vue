@@ -5,11 +5,7 @@
 <script>
 import { defineComponent } from "@vue/runtime-core";
 
-export default defineComponent({
-  data() {
-    return {};
-  },
-});
+export default defineComponent({});
 </script>
 
 <style scoped lang="scss">
