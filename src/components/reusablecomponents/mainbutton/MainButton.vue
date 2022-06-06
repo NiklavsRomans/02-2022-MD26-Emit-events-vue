@@ -1,5 +1,5 @@
 <template>
-  <button class="button" @click="handleClick">{{ name }}</button>
+  <button class="button" @click="$emit('onClick')">{{ name }}</button>
 </template>
 
 <script>
@@ -9,11 +9,6 @@ export default defineComponent({
   name: "MainButton",
   props: ["name"],
   emits: ["onClick"],
-  methods: {
-    handleClick() {
-      this.$emit("onClick");
-    },
-  },
 });
 </script>
 
