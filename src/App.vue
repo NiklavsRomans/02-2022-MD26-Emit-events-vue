@@ -7,8 +7,8 @@
           <InputBox02 />
           <InputBox03 />
           <InputBox04 />
-          <DescriptionBox01 />
-          <DescriptionBox02 />
+          <TextBox01 />
+          <TextBox02 />
           <ToggleBox01 />
           <ToggleBox02 />
         </section>
@@ -27,8 +27,8 @@ import InputBox03 from "./components/taskone/InputBox03.vue";
 import InputBox04 from "./components/taskone/InputBox04.vue";
 
 // TASK TWO IMPORTS
-import DescriptionBox01 from "./components/tasktwo/DescriptionBox01.vue";
-import DescriptionBox02 from "./components/tasktwo/DescriptionBox02.vue";
+import TextBox01 from "./components/tasktwo/TextBox01.vue";
+import TextBox02 from "./components/tasktwo/TextBox02.vue";
 import ToggleBox01 from "./components/tasktwo/ToggleBox01.vue";
 import ToggleBox02 from "./components/tasktwo/ToggleBox02.vue";
 export default defineComponent({
@@ -38,8 +38,8 @@ export default defineComponent({
     InputBox02,
     InputBox03,
     InputBox04,
-    DescriptionBox01,
-    DescriptionBox02,
+    TextBox01,
+    TextBox02,
     ToggleBox01,
     ToggleBox02,
   },
