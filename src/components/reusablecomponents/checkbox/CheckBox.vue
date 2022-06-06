@@ -1,5 +1,5 @@
 <template>
-  <input class="checkbox" @change="handleCheck" type="checkbox" />
+  <input class="checkbox" @change="$emit('onCheck')" type="checkbox" />
 </template>
 
 <script>
@@ -11,12 +11,6 @@ export default defineComponent({
     return {};
   },
   emits: ["onCheck"],
-
-  methods: {
-    handleCheck() {
-      this.$emit("onCheck");
-    },
-  },
 });
 </script>
 
